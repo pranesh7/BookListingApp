@@ -26,7 +26,7 @@ public final class QueryUtils {
         ArrayList<Book> books = new ArrayList<>();
 
         try {
-            JSONObject baseJsonResponse = new JSONObject(bookJSON);
+            JSONObject baseJsonResponse = new JSONObject(SAMPLE_JSON_RESPONSE);
             if(baseJsonResponse.has("totalItems")) {
                 int totalItems = baseJsonResponse.getInt("totalItems");
                 if(totalItems == 0) {
