@@ -42,6 +42,7 @@ public final class QueryUtils {
                     JSONArray authors = properties.getJSONArray("authors");
                     for (int j = 0; j < authors.length(); j++) {
                         String author = authors.getString(j);
+
                         Book addList = new Book(title, author);
                         books.add(addList);
                     }

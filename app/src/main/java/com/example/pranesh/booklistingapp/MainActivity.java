@@ -16,15 +16,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ArrayList<Book> books = new  ArrayList<>();
-        books.add(new Book("Learning android","Dale Cargnie"));
-        books.add(new Book("HighPerformance android","Dale Cargnie"));
-        books.add(new Book("Programming","Dale Cargnie"));
-        books.add(new Book("Memory Performance","Dale Cargnie"));
-        books.add(new Book("Updating the UI's","Dale Cargnie"));
-        books.add(new Book("Design Enhancements","Dale Cargnie"));
-        books.add(new Book("Advance Programming","Dale Cargnie"));
-
+        ArrayList<Book> books = QueryUtils.extractBooKList();
+        
         ListView bookListView = (ListView) findViewById(R.id.list);
 
         BookAdapter adapter = new BookAdapter(
