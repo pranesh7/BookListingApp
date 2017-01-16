@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ArrayList<Book> books = QueryUtils.extractBooKList();
-        
+
         ListView bookListView = (ListView) findViewById(R.id.list);
 
         BookAdapter adapter = new BookAdapter(
