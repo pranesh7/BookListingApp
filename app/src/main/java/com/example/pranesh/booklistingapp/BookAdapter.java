@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -47,21 +48,7 @@ public class BookAdapter extends ArrayAdapter<Book> {
 
 }
 
-    String strname="";
 
-JSONObject root = new JSONObject(strname);
-
-JSONArray itemsArray = root.optJSONArray("items");
-
-JSONObject firstBook = itemsArray.getJSONObject(0);
-
-JSONObject firstVolume = firstBook.getJSONObject("volumeInfo");
-
-String title = firstVolume.getString("title");
-
-JSONArray authorsArray = firstVolume.getJSONArray("authors");
-
-    String authorName = firstVolume.getString("0");
 
 
 

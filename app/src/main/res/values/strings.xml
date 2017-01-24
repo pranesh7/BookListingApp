@@ -2,4 +2,7 @@
     <string name="app_name">BookListingApp</string>
     <string name="search_books">Search_Books</string>
     <string name="press_button">Search</string>
+    <string name="no_books">No books found.</string>
+    <string name="searchbooks"> Searchbooks </string>
+    <string name="search"> Search </string>
 </resources>
