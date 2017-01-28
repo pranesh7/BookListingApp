@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
     private BookAdapter mAdapter;
 
-    private static final String GBOOKS_REQUEST_URL = " https://www.googleapis.com/books/v1/volumes?q=android&maxResults=10";
+    private static  String GBOOKS_REQUEST_URL= "https://www.googleapis.com/books/v1/volumes?q=android&maxResults=10";
 
     private static final int BOOK_LOADER_ID = 1;
 
@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
         mEmptyStateTextView = (TextView) findViewById(R.id.empty_view);
         bookListView.setEmptyView(mEmptyStateTextView);
+
 
 
         bookListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
